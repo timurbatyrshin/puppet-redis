@@ -315,7 +315,7 @@ class redis (
 
   $manage_file_content = $redis::template ? {
     ''        => undef,
-    default   => template($redis::template),
+    default   => rev_template($redis::template),
   }
 
 
